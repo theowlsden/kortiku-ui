@@ -4,9 +4,53 @@
     </div>
     <div id="links">
         <ul class=" hidden md:flex flex-row h-full content-center justify-center">
-            <li class="px-2 self-center">features</li>
+            <li class="px-2 self-center"><a href="#">home</a></li>
+            <li class="px-2 self-center"><a href="#features">features</a></li>
             <li class="px-2 self-center">login</li>
             <li class="px-2 self-center">signup</li>
         </ul>
     </div>
+    <div id="toggle-btn" class="md:hidden">
+        <button (click)="toggleMenu()" type="button"
+            class="bg-gray-50 rounded-md p-2 focus:outline-none focus:ring-0" aria-expanded="false">
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+        </button>
+    </div>
 </nav>
+
+<nav>
+<div id="mobileNav" [ngClass]="hiddenNav ? 'hidden' : ''"
+            class=" fixed transition-transform duration-500 ease-in-out origin-top-right top-4 inset-x-0 p-2 md:hidden ">
+            <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div class="">
+                    <button (click)="toggleMenu()" type="button"
+                        class="bg-gray-50 rounded-md p-2 focus:outline-none focus:ring-0">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <div id="nav-links" class="">
+                        <ul class="flex flex-col">
+                            <li class="px-4"><a class="font-primary font-normal text-sm" href="#">home</a></li>
+                            <li class="px-4"><a class="font-primary font-normal text-sm" href="#features">features</a>
+                            </li>
+                            <li class="px-4"><a class="font-primary font-normal text-sm" href="#">login</a></li>
+                            <li class="px-4"><a class="font-primary font-normal text-sm" href="">don't have an account?
+                                    <span class="font-primary font-bold text-indigo-400 text-sm">sign up here</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>

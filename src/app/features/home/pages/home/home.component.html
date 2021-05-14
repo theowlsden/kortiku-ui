@@ -1,5 +1,15 @@
 <div
-  class="container m-auto md:my-6 py-6 px-4 md:rounded-2xl bg-purple-200 md:flex md:flex-row"
+  class="
+    container
+    m-auto
+    my-4
+    md:my-6
+    py-6
+    px-4
+    md:rounded-2xl
+    bg-purple-200
+    md:flex md:flex-row
+  "
 >
   <div class="px-8 md:w-1/2">
     <section class="py-3">
@@ -22,16 +32,37 @@
           type="text"
           name=""
           id="longUrl"
+          placeholder="https://www.google.com"
         />
         <button
-          class="mx-4 px-4 py-2 rounded-full bg-gradient-to-r from-indigo-300 to-purple-400 text-white font-medium shadow-md"
+          class="
+            md:mx-4
+            mx-2
+            my-2
+            px-4
+            py-2
+            rounded-full
+            bg-gradient-to-r
+            from-indigo-300
+            to-purple-400
+            text-white
+            font-medium
+            shadow-md
+          "
         >
           shorten
         </button>
       </section>
     </section>
     <section
-      class="p-4 bg-gradient-to-r from-indigo-300 to-purple-400 rounded-2xl shadow-lg"
+      class="
+        p-4
+        bg-gradient-to-r
+        from-indigo-300
+        to-purple-400
+        rounded-2xl
+        shadow-lg
+      "
     >
       <h2 class="text-2xl">kortiku.co/xyzee12</h2>
       <p>will redirect to</p>
@@ -44,7 +75,9 @@
 </div>
 
 <!-- FEATURES -->
-<div class="container m-auto md:my-6 py-6 px-4 md:rounded-2xl bg-purple-200">
+<div id="features"
+  class="container m-auto my-4 md:my-6 py-6 px-4 md:rounded-2xl bg-purple-200"
+>
   <section class="px-8 py-3">
     <h1 class="text-4xl font-extrabold">Features</h1>
     <p class="text- my-2">
@@ -60,30 +93,64 @@
       <app-cards></app-cards>
       <app-cards></app-cards>
     </div>
-
   </div>
 </div>
 
 <!-- CALL TO ACTION -->
-<div class="container m-auto md:my-6 py-6 px-4 md:rounded-2xl bg-purple-200">
-  <section class="px-8 py-3">
-    <h1 class="text-4xl font-extrabold">Sign up, it's free</h1>
-    <p class="text- my-2">
-      And start sharing your most important links.
-    </p>
-  </section>
+<div id="cta"
+  class="container m-auto my-4 md:my-6 py-6 px-4 md:rounded-2xl bg-purple-200"
+>
+  
   <div class="px-8 md:flex md:flex-row">
     <div class="md:w-1/2">
+      <section class="py-3">
+        <h1 class="text-4xl font-extrabold">Sign up, it's free</h1>
+        <p class="text- my-2">And start sharing your most important links.</p>
+      </section>
       <section>
-        <h3>
-          Start by securing your username
-        </h3>
+        <h3>Start by securing your username</h3>
+        <section class="md:flex md:flex-row">
+          <div
+            class="mt-1 px-4 bg-white rounded-lg shadow-sm md:flex md:flex-row"
+          >
+            <span class="hidden md:block py-2 text-lg font-medium">
+              kortiku/
+            </span>
+            <input
+              class="px-4 py-2 rounded-lg"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="john_doe"
+            />
+          </div>
+          <button
+            class="
+              md:mx-4
+              my-2
+              md:my-0
+              px-4
+              py-2
+              rounded-full
+              bg-gradient-to-r
+              from-indigo-300
+              to-purple-400
+              text-white
+              font-medium
+              shadow-md
+            "
+          >
+            <img
+              src="../../../../../assets/icons/next.svg"
+              alt="sign up"
+              srcset=""
+            />
+          </button>
+        </section>
       </section>
     </div>
-    <div class="md:w-1/2">
-      <app-cards></app-cards>
-      <app-cards></app-cards>
+    <div class=" flex justify-center content-center md:w-1/2 pt-4">
+      <img class="w-48 shadow-xl " src="../../../../../assets/img/lip.png" alt="">
     </div>
-
   </div>
 </div>
